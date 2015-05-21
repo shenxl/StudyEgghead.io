@@ -1,0 +1,17 @@
+{
+  "name": "studyJWTinEgghead",
+  "version": "0.0.1",
+  "authors": [
+    "shenxl <shen.sxl@icloud.com>"
+  ],
+  "main": "public/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "test",
+    "tests"
+  ],
+  "dependencies":{
+    "angular":"angular#1.3.15"
+  }
+}
