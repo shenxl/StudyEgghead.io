@@ -5,15 +5,17 @@
     <title>JWT Example</title>
 </head>
 <body ng-controller="MainCtrl">
-<h1>获得随机用户</h1>
-<div>
+<h1>JWT Demo</h1>
+<div ng-hide="user">
     <form ng-submit="login(username,password)">
         <label>用户名:<input type="text" ng-model="username"/></label><br/>
         <label>密码:<input type="text" ng-model="password"/></label><br/>
         <button type="submit">登陆</button>
     </form>
 </div>
-<div>
+<div ng-show="user">
+    <h1>Hello {{user.username}}</h1>
+    <button ng-click="logout()">退出</button>
     <button ng-click="getRandomUser()">获得用户</button>
     <pre ng-bind="randomUser | json"></pre>
 </div>
